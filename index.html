@@ -11,7 +11,8 @@
 
 <body class="body">
     <nav class="menu">
-
+        <h1>Score:</h1>
+        <h1 id="score">0</h1>
         <div class="container">
             Off/On <br/>
             <label class="switch" for="checkbox_on_off">
@@ -27,15 +28,31 @@
               <div class="slider round"></div>
             </label>
         </div>
-
+        
         <div class="container">
+            Color Neutro <br/>
+            <label class="switch" for="checkbox_color_neutro">
+              <input type="checkbox" id="checkbox_color_neutro"/>
+              <div class="slider round"></div>
+            </label>
+        </div>
+        
+        <div class="container">
+            Sound <br/>
+            <label class="switch" for="checkbox_sound">
+              <input type="checkbox" id="checkbox_sound" checked/>
+              <div class="slider round"></div>
+            </label>
+        </div>
+
+        <!-- <div class="container">
             <label for="game_mode">Game Mode</label><br/>
             <select name="game_mode" id="game_mode">
                 <option value="1">JOGO 1 - O DESAFIO DE GENIUS</option>
                 <option value="2">JOGO 2 - VOCÊ INVENTA A SEQUÊNCIA</option>
                 <option value="3">JOGO 3 - VOCÊ ESCOLHE SÓ UMA COR</option>
             </select>
-        </div>
+        </div> -->
 
     </nav>
     
@@ -53,7 +70,7 @@
         </div>
     </div>
 
-    <script src="index.js" defer></script>
+    <script type="module" defer src="index.js"></script>
 </body>
 </html>
   
