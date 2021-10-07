@@ -1,6 +1,6 @@
 ## Desafio DIO :: GENIUS 🟢 🔴 🟡 🔵 🎮
 
-[JOGAR](https://dayanfreitas.github.io/Genius/public/)
+[JOGAR ⏯️](https://dayanfreitas.github.io/Genius/public/)
 ### CONHEÇA O SEU GENIUS
 
 O sucesso da década de 80 está de volta!  
