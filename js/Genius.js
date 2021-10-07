@@ -1,4 +1,5 @@
 import Helper from "./Helper.js"
+import NoticeAlert from './NoticeAlert.js'
 
 const Genius = ({ songs }) => {
     const GENIUS_CONFIGURATION = {
@@ -62,12 +63,10 @@ const Genius = ({ songs }) => {
         state.order_player[index] = id.toUpperCase()
         
         if (state.order_player[index] == state.order_machine[index]) {
-            // console.log(state.order_player[index])
-            // console.log(state.order_machine[index])
             
             bip(target).then((r) => {
                 if (state.order_player.length == state.order_machine.length) {
-                    alert("Passou de nivel !")
+                    NoticeAlert.flash({type:'success', msg: "Passou de nivel !"})
                     nextLevel()
                 }
             })
@@ -91,14 +90,6 @@ const Genius = ({ songs }) => {
         })
     }
 
-    // const readAnswer = () => {
-    //     configurationButtonColor(true)
-    //     // GENIUS_CONFIGURATION.COLORS.forEach((el) => {
-    //     //     el.addEventListener('click', clickColor)
-    //     // })
-
-    // }
-
     const processNextColor = ({e, el, index, song}) => {
         index++;
         
@@ -108,7 +99,6 @@ const Genius = ({ songs }) => {
             return
         }
         configurationButtonColor(true)
-        // readAnswer()
     }
     
     const processBip = ({e, el, index}) => {
@@ -119,12 +109,6 @@ const Genius = ({ songs }) => {
         }, GENIUS_CONFIGURATION.TIME_OUT_OFF_COLOR);
     }
 
-    const game = {
-        player: "",
-        score: 0,
-        order_machine: [],
-        order_player: []
-    }
 
     const display = (index) => {
         const e = state.order_machine[index]
@@ -135,8 +119,6 @@ const Genius = ({ songs }) => {
     }
 
     const on = () => {
-        // state.state = GENIUS_CONFIGURATION.STATUS[1];
-
         GENIUS_CONFIGURATION.COLORS.forEach((el) => { 
             el.classList.add("on");
         })
@@ -161,7 +143,8 @@ const Genius = ({ songs }) => {
     }
 
     const gameOver = () => {
-        alert("GAME OVER!");
+        // alert("GAME OVER!");
+        NoticeAlert.flash({type: 'error', msg: "GAME OVER!!"})
         GENIUS_CONFIGURATION.BUTTON_PLAY.classList.remove("d-none");
 
         restartState();
@@ -203,7 +186,6 @@ const Genius = ({ songs }) => {
         return {
             on,
             off,
-            game,
             songs,
             state
         }

@@ -13,9 +13,8 @@ EXISTEM 3 FORMAS DE JOGAR E ENFRENTAR O GENIUS!
     OBJETIVO:  
     Repetir corretamente a sequência de sinais, cada vez mais longa.
 
-* JOGO 2 - VOCÊ INVENTA A SEQUÊNCIA             
-* JOGO 3 - VOCÊ ESCOLHE SÓ UMA COR            
-
+<!--* JOGO 2 - VOCÊ INVENTA A SEQUÊNCIA             
+* JOGO 3 - VOCÊ ESCOLHE SÓ UMA COR -->           
 
 Documentação de referência: https://statics-submarino.b2w.io/manuais/111703711.pdf
 
