@@ -1,9 +1,10 @@
-## Desafio DIO :: GENIUS
+## Desafio DIO :: GENIUS 🟢 🔴 🟡 🔵 🎮
 
 ### CONHEÇA O SEU GENIUS
 
 O sucesso da década de 80 está de volta!  
 
+🟢 🔴 🟡 🔵 🎮
 
 ## Como Jogar 
 
